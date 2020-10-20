@@ -1,0 +1,89 @@
+{
+  "content_location": {
+    "connection": {
+
+    },
+    "contents": [{
+      "content_format": "native",
+      "file_name": "pipeline_model.json",
+      "location": "auto_ml/326c32fb-0be6-49cb-b275-ee0fa3f1cee6/wml_data/ac5904b4-22e5-4afd-a89a-3752818ae9e7/assets/ac5904b4-22e5-4afd-a89a-3752818ae9e7_P1_compose_model_type_output/resources/wml_model/pipeline_model.json"
+    }, {
+      "content_format": "pipeline-node",
+      "file_name": "P1_automl.zip",
+      "location": "auto_ml/326c32fb-0be6-49cb-b275-ee0fa3f1cee6/wml_data/ac5904b4-22e5-4afd-a89a-3752818ae9e7/assets/ac5904b4-22e5-4afd-a89a-3752818ae9e7_P1_compose_model_type_output/resources/wml_model/P1_automl.zip",
+      "pipeline_node_id": "automl"
+    }, {
+      "content_format": "native",
+      "file_name": "pipeline_model.json",
+      "location": "auto_ml/326c32fb-0be6-49cb-b275-ee0fa3f1cee6/wml_data/ac5904b4-22e5-4afd-a89a-3752818ae9e7/assets/ac5904b4-22e5-4afd-a89a-3752818ae9e7_P1_compose_model_type_output/resources/wml_model/pipeline_model.json"
+    }],
+    "location": {
+      "path": "auto_ml/326c32fb-0be6-49cb-b275-ee0fa3f1cee6/wml_data",
+      "training": "auto_ml/326c32fb-0be6-49cb-b275-ee0fa3f1cee6/wml_data/ac5904b4-22e5-4afd-a89a-3752818ae9e7",
+      "training_status": "auto_ml/326c32fb-0be6-49cb-b275-ee0fa3f1cee6/wml_data/ac5904b4-22e5-4afd-a89a-3752818ae9e7/training-status.json",
+      "bucket": "diabeticspredictionsystem-donotdelete-pr-jdsg3dvfmbpxwg",
+      "type": "s3",
+      "assets_path": "auto_ml/326c32fb-0be6-49cb-b275-ee0fa3f1cee6/wml_data/ac5904b4-22e5-4afd-a89a-3752818ae9e7/assets"
+    },
+    "type": "s3"
+  },
+  "hybrid_pipeline_software_specs": [{
+    "name": "autoai-kb_3.1-py3.7"
+  }],
+  "name": "P1",
+  "pipeline": {
+    "id": "5b4f2f7b-fa42-4dc5-8d86-36dd601755dd"
+  },
+  "project_id": "97c98720-069e-4c1c-9238-4109b3dbb2f8",
+  "schemas": {
+    "input": [{
+      "fields": [{
+        "name": "Pregnancies",
+        "type": "integer"
+      }, {
+        "name": "Glucose",
+        "type": "integer"
+      }, {
+        "name": "BloodPressure",
+        "type": "integer"
+      }, {
+        "name": "SkinThickness",
+        "type": "integer"
+      }, {
+        "name": "Insulin",
+        "type": "integer"
+      }, {
+        "name": "BMI",
+        "type": "double"
+      }, {
+        "name": "DiabetesPedigreeFunction",
+        "type": "double"
+      }, {
+        "name": "Age",
+        "type": "integer"
+      }],
+      "id": "auto_ai_kb_input_schema"
+    }],
+    "output": []
+  },
+  "software_spec": {
+    "name": "hybrid_0.1"
+  },
+  "training_data_references": [{
+    "connection": {
+      "endpoint_url": "https://s3-api.us-geo.objectstorage.softlayer.net",
+      "auth_endpoint": "https://iam.bluemix.net/oidc/token/",
+      "api_key": "QL8TzBoqVta9NK9ikfWI1M7Jdu3AFmgdo-JSg2IRN04J",
+      "secret_access_key": "fce64508c6862bc9faf5bc02bda5e4624c6cb9f865ee1782",
+      "access_key_id": "7e91d12199d742c7b001bc89ee1ed661",
+      "service_instance_id": "iam-ServiceId-6c4556cb-b484-40c9-b94c-04e60e1ae3ce"
+    },
+    "location": {
+      "type": "s3",
+      "bucket": "diabeticspredictionsystem-donotdelete-pr-jdsg3dvfmbpxwg",
+      "path": "diabetes.csv"
+    },
+    "type": "s3"
+  }],
+  "type": "wml-hybrid_0.1"
+}
